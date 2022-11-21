@@ -12,22 +12,22 @@ import java.util.List;
 @Service
 public class JsonPlaceholderService {
 
-    private final String URL = "src/main/resources/static/jsonData/vocabularies.json";
+    //private final String URL = "src/main/resources/static/jsonData/vocabularies.json";
 
-     private final ObjectMapper objectMapper;
+//     private final ObjectMapper objectMapper;
 
-    public JsonPlaceholderService(ObjectMapper objectMapper) {
+//    public JsonPlaceholderService(ObjectMapper objectMapper) {
+//
+//        this.objectMapper = objectMapper;
+//    }
 
-        this.objectMapper = objectMapper;
-    }
 
-
-    public List<Word> getWords() throws IOException {
-        List<Word> words = objectMapper.readValue(
-                new File(URL),
-                objectMapper
-                        .getTypeFactory()
-                        .constructCollectionType(List.class, Word.class));
-        return words;
-    }
+//    public List<Word> getWords() throws IOException {
+//        List<Word> words = objectMapper.readValue(
+//                new File(URL),
+//                objectMapper
+//                        .getTypeFactory()
+//                        .constructCollectionType(List.class, Word.class));
+//        return words;
+//    }
 }
